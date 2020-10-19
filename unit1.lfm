@@ -1,0 +1,1512 @@
+object Form1: TForm1
+  Left = 498
+  Height = 508
+  Top = 163
+  Width = 834
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Проверочная работа 1 (Нейрокомпьютерные технологии, Ионисян А.С.)'
+  ClientHeight = 508
+  ClientWidth = 834
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.0.6.0'
+  object Label_total: TLabel
+    Left = 667
+    Height = 55
+    Top = 5
+    Width = 92
+    Caption = '0 %'
+    Font.Height = -48
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit_Name: TEdit
+    Left = 165
+    Height = 43
+    Top = 47
+    Width = 453
+    Font.Height = -27
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 0
+    Text = 'Технология'
+  end
+  object Edit_surname: TEdit
+    Left = 165
+    Height = 43
+    Top = 5
+    Width = 453
+    Font.Height = -27
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 1
+    Text = 'Нейрокомпьютерная'
+  end
+  object Label2: TLabel
+    Left = 11
+    Height = 31
+    Top = 53
+    Width = 62
+    Caption = 'ИМЯ'
+    Font.Height = -27
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 11
+    Height = 31
+    Top = 11
+    Width = 143
+    Caption = 'ФАМИЛИЯ'
+    Font.Height = -27
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox_arith: TGroupBox
+    Left = 11
+    Height = 117
+    Top = 91
+    Width = 400
+    Caption = 'Арифметика - 0% (из 10%)'
+    ClientHeight = 100
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 2
+    object BTN_arith_check: TButton
+      Left = 5
+      Height = 37
+      Top = 43
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_arith_checkClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label5: TLabel
+      Left = 96
+      Height = 14
+      Top = 5
+      Width = 56
+      Caption = 'Сложить'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 96
+      Height = 14
+      Top = 24
+      Width = 52
+      Caption = 'Вычесть'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 96
+      Height = 14
+      Top = 43
+      Width = 88
+      Caption = 'Перемножить'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 96
+      Height = 14
+      Top = 61
+      Width = 115
+      Caption = 'Разделить нацело'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_plus_op1: TEdit
+      Left = 235
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_arith_plus_op2: TEdit
+      Left = 293
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_arith_plus_res: TEdit
+      Left = 341
+      Height = 19
+      Top = 5
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Label37: TLabel
+      Left = 269
+      Height = 14
+      Top = 5
+      Width = 8
+      Caption = '+'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label38: TLabel
+      Left = 327
+      Height = 14
+      Top = 5
+      Width = 8
+      Caption = '='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_minus_op1: TEdit
+      Left = 235
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Label39: TLabel
+      Left = 269
+      Height = 14
+      Top = 24
+      Width = 4
+      Caption = '-'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_minus_op2: TEdit
+      Left = 293
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Label40: TLabel
+      Left = 327
+      Height = 14
+      Top = 24
+      Width = 8
+      Caption = '='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_minus_res: TEdit
+      Left = 341
+      Height = 19
+      Top = 24
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Edit_arith_mul_op1: TEdit
+      Left = 235
+      Height = 19
+      Top = 43
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Label41: TLabel
+      Left = 269
+      Height = 14
+      Top = 43
+      Width = 6
+      Caption = '*'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_mul_op2: TEdit
+      Left = 293
+      Height = 19
+      Top = 43
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object Label42: TLabel
+      Left = 327
+      Height = 14
+      Top = 43
+      Width = 8
+      Caption = '='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_mul_res: TEdit
+      Left = 341
+      Height = 19
+      Top = 43
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 9
+    end
+    object Edit_arith_div_op1: TEdit
+      Left = 235
+      Height = 19
+      Top = 61
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 10
+    end
+    object Label43: TLabel
+      Left = 261
+      Height = 14
+      Top = 61
+      Width = 18
+      Caption = 'div'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_div_op2: TEdit
+      Left = 293
+      Height = 19
+      Top = 61
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 11
+    end
+    object Label44: TLabel
+      Left = 327
+      Height = 14
+      Top = 61
+      Width = 8
+      Caption = '='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_div_res: TEdit
+      Left = 341
+      Height = 19
+      Top = 61
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 12
+    end
+    object Edit_arith_mod_op1: TEdit
+      Left = 235
+      Height = 19
+      Top = 80
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 13
+    end
+    object Label45: TLabel
+      Left = 261
+      Height = 14
+      Top = 80
+      Width = 27
+      Caption = 'mod'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_mod_op2: TEdit
+      Left = 293
+      Height = 19
+      Top = 80
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 14
+    end
+    object Label46: TLabel
+      Left = 327
+      Height = 14
+      Top = 80
+      Width = 8
+      Caption = '='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_arith_mod_res: TEdit
+      Left = 341
+      Height = 19
+      Top = 80
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 15
+    end
+    object Label47: TLabel
+      Left = 96
+      Height = 14
+      Top = 79
+      Width = 89
+      Caption = 'Найти остаток'
+      ParentColor = False
+      ParentFont = False
+    end
+    object BTN_Arith_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 5
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_Arith_AgainClick
+      ParentFont = False
+      TabOrder = 16
+    end
+  end
+  object GroupBox_plus_minus_vect: TGroupBox
+    Left = 11
+    Height = 89
+    Top = 213
+    Width = 400
+    Caption = 'Сумма и разность векторов - 0% (из 10%)'
+    ClientHeight = 72
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 3
+    object BTN_PM_Vect_check: TButton
+      Left = 96
+      Height = 37
+      Top = 4
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_PM_Vect_checkClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label9: TLabel
+      Left = 197
+      Height = 14
+      Top = 4
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label17: TLabel
+      Left = 197
+      Height = 14
+      Top = 23
+      Width = 59
+      Caption = 'Вектор b:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label35: TLabel
+      Left = 8
+      Height = 14
+      Top = 47
+      Width = 40
+      Caption = 'a + b ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label36: TLabel
+      Left = 208
+      Height = 14
+      Top = 47
+      Width = 36
+      Caption = 'a - b ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_vect_pm_a1: TEdit
+      Left = 277
+      Height = 19
+      Top = 4
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_vect_pm_a2: TEdit
+      Left = 304
+      Height = 19
+      Top = 4
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_vect_pm_a3: TEdit
+      Left = 331
+      Height = 19
+      Top = 4
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_vect_pm_a4: TEdit
+      Left = 357
+      Height = 19
+      Top = 4
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Edit_vect_pm_b1: TEdit
+      Left = 277
+      Height = 19
+      Top = 23
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Edit_vect_pm_b2: TEdit
+      Left = 304
+      Height = 19
+      Top = 23
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Edit_vect_pm_b3: TEdit
+      Left = 331
+      Height = 19
+      Top = 23
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Edit_vect_pm_b4: TEdit
+      Left = 357
+      Height = 19
+      Top = 23
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object Edit_vect_plus_res1: TEdit
+      Left = 61
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 9
+    end
+    object Edit_vect_plus_res2: TEdit
+      Left = 96
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 10
+    end
+    object Edit_vect_plus_res3: TEdit
+      Left = 131
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 11
+    end
+    object Edit_vect_plus_res4: TEdit
+      Left = 166
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 12
+    end
+    object Edit_vect_minus_res1: TEdit
+      Left = 255
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 13
+    end
+    object Edit_vect_minus_res2: TEdit
+      Left = 290
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 14
+    end
+    object Edit_vect_minus_res3: TEdit
+      Left = 325
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 15
+    end
+    object Edit_vect_minus_res4: TEdit
+      Left = 360
+      Height = 19
+      Top = 47
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 16
+    end
+    object BTN_PM_Vect_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 4
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_PM_Vect_AgainClick
+      ParentFont = False
+      TabOrder = 17
+    end
+  end
+  object GroupBox_scalar: TGroupBox
+    Left = 11
+    Height = 91
+    Top = 309
+    Width = 400
+    Caption = 'Скалярное произведение векторов - 0% (из 10%)'
+    ClientHeight = 74
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 4
+    object BTN_scalar_check: TButton
+      Left = 5
+      Height = 37
+      Top = 37
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_scalar_checkClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label18: TLabel
+      Left = 107
+      Height = 14
+      Top = 5
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label19: TLabel
+      Left = 107
+      Height = 14
+      Top = 24
+      Width = 59
+      Caption = 'Вектор b:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label34: TLabel
+      Left = 128
+      Height = 14
+      Top = 48
+      Width = 36
+      Caption = '(a,b) ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_scalar_a1: TEdit
+      Left = 187
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_scalar_a2: TEdit
+      Left = 213
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_scalar_a3: TEdit
+      Left = 240
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_scalar_a4: TEdit
+      Left = 267
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Edit_scalar_b1: TEdit
+      Left = 187
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Edit_scalar_b2: TEdit
+      Left = 213
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Edit_scalar_b3: TEdit
+      Left = 240
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Edit_scalar_b4: TEdit
+      Left = 267
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object Edit_scalar_res: TEdit
+      Left = 187
+      Height = 19
+      Top = 48
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 9
+    end
+    object BTN_Scalar_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 0
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_Scalar_AgainClick
+      ParentFont = False
+      TabOrder = 10
+    end
+  end
+  object GroupBox_outer: TGroupBox
+    Left = 427
+    Height = 117
+    Top = 91
+    Width = 400
+    Caption = 'Внешнее произведение векторов - 0% (из 20%)'
+    ClientHeight = 100
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 5
+    object BTN_outer_check: TButton
+      Left = 5
+      Height = 37
+      Top = 43
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_outer_checkClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label20: TLabel
+      Left = 107
+      Height = 14
+      Top = 5
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label21: TLabel
+      Left = 107
+      Height = 14
+      Top = 24
+      Width = 59
+      Caption = 'Вектор b:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label30: TLabel
+      Left = 123
+      Height = 14
+      Top = 61
+      Width = 39
+      Caption = 'a x b ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_outer_a1: TEdit
+      Left = 187
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_outer_a2: TEdit
+      Left = 213
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_outer_a3: TEdit
+      Left = 240
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_outer_b1: TEdit
+      Left = 187
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Edit_outer_b2: TEdit
+      Left = 213
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Edit_outer_b3: TEdit
+      Left = 240
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Edit_outer_res11: TEdit
+      Left = 175
+      Height = 19
+      Top = 43
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 7
+    end
+    object Edit_outer_res12: TEdit
+      Left = 210
+      Height = 19
+      Top = 43
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 8
+    end
+    object Edit_outer_res13: TEdit
+      Left = 245
+      Height = 19
+      Top = 43
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 9
+    end
+    object Edit_outer_res21: TEdit
+      Left = 175
+      Height = 19
+      Top = 62
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 10
+    end
+    object Edit_outer_res22: TEdit
+      Left = 210
+      Height = 19
+      Top = 62
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 11
+    end
+    object Edit_outer_res23: TEdit
+      Left = 245
+      Height = 19
+      Top = 62
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 12
+    end
+    object Edit_outer_res31: TEdit
+      Left = 175
+      Height = 19
+      Top = 81
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 13
+    end
+    object Edit_outer_res32: TEdit
+      Left = 210
+      Height = 19
+      Top = 81
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 14
+    end
+    object Edit_outer_res33: TEdit
+      Left = 245
+      Height = 19
+      Top = 81
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 15
+    end
+    object BTN_Outer_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 5
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_Outer_AgainClick
+      ParentFont = False
+      TabOrder = 16
+    end
+  end
+  object GroupBox_len: TGroupBox
+    Left = 11
+    Height = 91
+    Top = 405
+    Width = 400
+    Caption = 'Длина вектора - 0% (из 10%)'
+    ClientHeight = 74
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 6
+    object Label28: TLabel
+      Left = 107
+      Height = 14
+      Top = 5
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label29: TLabel
+      Left = 107
+      Height = 14
+      Top = 24
+      Width = 198
+      Caption = 'Округленная длина вектора a ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_len_a1: TEdit
+      Left = 187
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object Edit_len_a2: TEdit
+      Left = 213
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_len_a3: TEdit
+      Left = 240
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_len_a4: TEdit
+      Left = 267
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_len_res: TEdit
+      Left = 320
+      Height = 19
+      Top = 23
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 4
+    end
+    object BTN_Len_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 0
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_Len_AgainClick
+      ParentFont = False
+      TabOrder = 5
+    end
+    object BTN_len_check: TButton
+      Left = 5
+      Height = 37
+      Top = 35
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_len_checkClick
+      ParentFont = False
+      TabOrder = 6
+    end
+  end
+  object GroupBox_cos: TGroupBox
+    Left = 427
+    Height = 91
+    Top = 212
+    Width = 400
+    Caption = 'Косинус угла между векторами - 0% (из 20%)'
+    ClientHeight = 74
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 7
+    object Label22: TLabel
+      Left = 107
+      Height = 14
+      Top = 5
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label23: TLabel
+      Left = 107
+      Height = 14
+      Top = 24
+      Width = 59
+      Caption = 'Вектор b:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label33: TLabel
+      Left = 107
+      Height = 14
+      Top = 48
+      Width = 142
+      Caption = 'Округленное cos(a,b) ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_cos_a1: TEdit
+      Left = 187
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object Edit_cos_a2: TEdit
+      Left = 213
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_cos_a3: TEdit
+      Left = 240
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_cos_a4: TEdit
+      Left = 267
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_cos_b1: TEdit
+      Left = 187
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Edit_cos_b2: TEdit
+      Left = 213
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Edit_cos_b3: TEdit
+      Left = 240
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Edit_cos_b4: TEdit
+      Left = 267
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Edit_cos_res: TEdit
+      Left = 285
+      Height = 19
+      Top = 47
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 8
+    end
+    object BTN_cos_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 0
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_cos_AgainClick
+      ParentFont = False
+      TabOrder = 9
+    end
+    object BTN_cos_check: TButton
+      Left = 5
+      Height = 37
+      Top = 35
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_cos_checkClick
+      ParentFont = False
+      TabOrder = 10
+    end
+  end
+  object GroupBox_dist: TGroupBox
+    Left = 427
+    Height = 91
+    Top = 309
+    Width = 400
+    Caption = 'Квадрат расстояния между векторами - 0% (из 20%)'
+    ClientHeight = 74
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 8
+    object Label24: TLabel
+      Left = 107
+      Height = 14
+      Top = 5
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label25: TLabel
+      Left = 107
+      Height = 14
+      Top = 24
+      Width = 59
+      Caption = 'Вектор b:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label32: TLabel
+      Left = 123
+      Height = 14
+      Top = 48
+      Width = 44
+      Caption = 'd(a,b) ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_dist_a1: TEdit
+      Left = 187
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object Edit_dist_a2: TEdit
+      Left = 213
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_dist_a3: TEdit
+      Left = 240
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_dist_a4: TEdit
+      Left = 267
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_dist_res: TEdit
+      Left = 187
+      Height = 19
+      Top = 48
+      Width = 53
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Edit_dist_b1: TEdit
+      Left = 187
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Edit_dist_b2: TEdit
+      Left = 213
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Edit_dist_b3: TEdit
+      Left = 240
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Edit_dist_b4: TEdit
+      Left = 267
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object BTN_dist_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 0
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_dist_AgainClick
+      ParentFont = False
+      TabOrder = 9
+    end
+    object BTN_dist_check: TButton
+      Left = 5
+      Height = 37
+      Top = 35
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_dist_checkClick
+      ParentFont = False
+      TabOrder = 10
+    end
+  end
+  object GroupBox_conv: TGroupBox
+    Left = 427
+    Height = 91
+    Top = 405
+    Width = 400
+    Caption = 'Свертка векторов - 0% (из 20%)'
+    ClientHeight = 74
+    ClientWidth = 398
+    ParentFont = False
+    TabOrder = 9
+    object Label26: TLabel
+      Left = 107
+      Height = 14
+      Top = 5
+      Width = 58
+      Caption = 'Вектор a:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label27: TLabel
+      Left = 107
+      Height = 14
+      Top = 24
+      Width = 59
+      Caption = 'Вектор b:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label31: TLabel
+      Left = 107
+      Height = 14
+      Top = 48
+      Width = 64
+      Caption = 'conv(a,b) ='
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit_conv_a1: TEdit
+      Left = 187
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object Edit_conv_a2: TEdit
+      Left = 213
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Edit_conv_a3: TEdit
+      Left = 240
+      Height = 19
+      Top = 5
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Edit_conv_b1: TEdit
+      Left = 187
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Edit_conv_b2: TEdit
+      Left = 213
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Edit_conv_b3: TEdit
+      Left = 240
+      Height = 19
+      Top = 24
+      Width = 27
+      AutoSize = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Edit_conv_res1: TEdit
+      Left = 185
+      Height = 19
+      Top = 48
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Edit_conv_res2: TEdit
+      Left = 220
+      Height = 19
+      Top = 48
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 7
+    end
+    object Edit_conv_res3: TEdit
+      Left = 255
+      Height = 19
+      Top = 48
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 8
+    end
+    object Edit_conv_res4: TEdit
+      Left = 290
+      Height = 19
+      Top = 48
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 9
+    end
+    object Edit_conv_res5: TEdit
+      Left = 325
+      Height = 19
+      Top = 48
+      Width = 35
+      AutoSize = False
+      ParentFont = False
+      TabOrder = 10
+    end
+    object BTN_conv_Again: TButton
+      Left = 5
+      Height = 37
+      Top = 0
+      Width = 91
+      Caption = 'Еще раз'
+      OnClick = BTN_conv_AgainClick
+      ParentFont = False
+      TabOrder = 11
+    end
+    object BTN_conv_check: TButton
+      Left = 5
+      Height = 37
+      Top = 35
+      Width = 91
+      Caption = 'Проверка'
+      OnClick = BTN_conv_checkClick
+      ParentFont = False
+      TabOrder = 12
+    end
+  end
+  object BTN_reset: TButton
+    Left = 629
+    Height = 25
+    Top = 63
+    Width = 187
+    Caption = 'Перезапуск'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    OnClick = BTN_resetClick
+    ParentFont = False
+    TabOrder = 10
+  end
+end
